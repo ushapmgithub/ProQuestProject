@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ProQuest Automation Suite">
+  <test name="Test in Firefox" preserve-order="true">
+  <parameter name="browserName" value="FF"></parameter>
+  <classes>
+      <class name="com.proquest.qa.testcases.GooglePageTest"/>
+      <class name="com.proquest.qa.testcases.SearchResultsPageTest"/>
+      <class name="com.proquest.qa.testcases.ProQuestHomePageTest"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test in Chrome" preserve-order="true">
+  <parameter name="browserName" value="chrome"></parameter>
+  <classes>
+      <class name="com.proquest.qa.testcases.GooglePageTest"/>
+      <class name="com.proquest.qa.testcases.SearchResultsPageTest"/>
+      <class name="com.proquest.qa.testcases.ProQuestHomePageTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

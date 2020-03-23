@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [ProQuest Automation Suite]">
+  <test name="ProQuest(failed)">
+    <classes>
+      <class name="com.proquest.qa.testcases.SearchResultsPageTest">
+        <methods>
+          <include name="task1"/>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.proquest.qa.testcases.SearchResultsPageTest -->
+      <class name="com.proquest.qa.testcases.GooglePageTest">
+        <methods>
+          <include name="googlePageTitleTest"/>
+          <include name="searchResultsTest"/>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.proquest.qa.testcases.GooglePageTest -->
+      <class name="com.proquest.qa.testcases.ProQuestHomePageTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+          <include name="task2"/>
+        </methods>
+      </class> <!-- com.proquest.qa.testcases.ProQuestHomePageTest -->
+    </classes>
+  </test> <!-- ProQuest(failed) -->
+</suite> <!-- Failed suite [ProQuest Automation Suite] -->
