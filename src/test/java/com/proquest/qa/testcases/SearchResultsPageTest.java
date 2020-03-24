@@ -37,10 +37,11 @@ public class SearchResultsPageTest extends TestBase {
 	}
 	
 	@Test(priority=1)
-	public void task1() throws IOException {
+	@Parameters({"browserName"})
+	public void task1(String browserName) throws IOException {
 		List<WebElement> allResults = searchResultsPage.resultTitles();
 		Reporter.log("Listed all the search Results of the web page,",true);
-		util.writeToFile(allResults);
+		util.writeToFile(allResults, browserName);
 		Reporter.log("Task1 is success and the text file is saved inside the folder 'Results' of the current project",true);
 	}
 	

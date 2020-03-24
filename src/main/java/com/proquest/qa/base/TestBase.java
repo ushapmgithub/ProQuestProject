@@ -16,8 +16,9 @@ public class TestBase {
 	public TestBase() {
 		try {
 			prop = new Properties();
-			FileInputStream in = new FileInputStream("C:\\Users\\YATHI\\eclipse-workspace\\"
-					+ "ProQuestProject\\src\\main\\java\\com\\proquest\\qa\\config\\config.properties");
+			FileInputStream in = new FileInputStream(".//src//main//java//com//proquest//qa//config//config.properties");
+			//FileInputStream in = new FileInputStream("C:\\Users\\YATHI\\eclipse-workspace\\"
+			//		+ "ProQuestProject\\src\\main\\java\\com\\proquest\\qa\\config\\config.properties");
 			prop.load(in);
 		}
 		catch (FileNotFoundException e) {

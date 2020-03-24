@@ -35,7 +35,8 @@ public class ProQuestHomePageTest extends TestBase {
 	}
 	
 	@Test(priority=1)
-	public void task2() throws InterruptedException, AWTException, IOException {
+	@Parameters({"browserName"})
+	public void task2(String browserName) throws InterruptedException, AWTException, IOException {
 		proQuestHomePage = searchResultsPage.clickOnProQuestLink();
 		Reporter.log("Clicked on Proquest link,",true);
 		if(proQuestHomePage.isPopupPresent()) {
@@ -50,7 +51,7 @@ public class ProQuestHomePageTest extends TestBase {
 		}
 		
 		driver.switchTo().defaultContent();
-		util.screenshotWithDate();
+		util.screenshotWithDate(browserName);
 		Reporter.log("Task 2 Success and the screenshot is saved inside folder 'Results' of the current project",true);
 	}
 	
