@@ -1,16 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [ProQuest Automation Suite]">
+  <test name="Test in Firefox(failed)">
+    <parameter name="browserName" value="FF"/>
     <classes>
-      <class name="com.proquest.qa.testcases.GooglePageTest">
+      <class name="com.proquest.qa.testcases.SearchResultsPageTest">
         <methods>
-          <include name="googlePageTitleTest"/>
-          <include name="searchResultsTest"/>
+          <include name="task1"/>
           <include name="setup"/>
           <include name="closeBrowser"/>
         </methods>
-      </class> <!-- com.proquest.qa.testcases.GooglePageTest -->
+      </class> <!-- com.proquest.qa.testcases.SearchResultsPageTest -->
+      <class name="com.proquest.qa.testcases.ProQuestHomePageTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+          <include name="task2"/>
+        </methods>
+      </class> <!-- com.proquest.qa.testcases.ProQuestHomePageTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test in Firefox(failed) -->
+  <test name="Test in Chrome(failed)">
+    <parameter name="browserName" value="chrome"/>
+    <classes>
+      <class name="com.proquest.qa.testcases.SearchResultsPageTest">
+        <methods>
+          <include name="task1"/>
+          <include name="setup"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.proquest.qa.testcases.SearchResultsPageTest -->
+    </classes>
+  </test> <!-- Test in Chrome(failed) -->
+</suite> <!-- Failed suite [ProQuest Automation Suite] -->
