@@ -4,25 +4,13 @@
   <test name="Test in Firefox(failed)">
     <parameter name="browserName" value="FF"/>
     <classes>
-      <class name="com.proquest.qa.testcases.ProQuestHomePageTest">
+      <class name="com.proquest.qa.testcases.SearchResultsPageTest">
         <methods>
-          <include name="closeBrowser"/>
+          <include name="task1"/>
           <include name="setup"/>
-          <include name="task2" invocation-numbers="0"/>
+          <include name="closeBrowser"/>
         </methods>
-      </class> <!-- com.proquest.qa.testcases.ProQuestHomePageTest -->
+      </class> <!-- com.proquest.qa.testcases.SearchResultsPageTest -->
     </classes>
   </test> <!-- Test in Firefox(failed) -->
-  <test name="Test in Chrome(failed)">
-    <parameter name="browserName" value="chrome"/>
-    <classes>
-      <class name="com.proquest.qa.testcases.ProQuestHomePageTest">
-        <methods>
-          <include name="closeBrowser"/>
-          <include name="setup"/>
-          <include name="task2" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- com.proquest.qa.testcases.ProQuestHomePageTest -->
-    </classes>
-  </test> <!-- Test in Chrome(failed) -->
 </suite> <!-- Failed suite [ProQuest Automation Suite] -->

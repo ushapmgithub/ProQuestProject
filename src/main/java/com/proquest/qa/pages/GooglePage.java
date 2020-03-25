@@ -25,7 +25,7 @@ public class GooglePage extends TestBase {
 	
 	public SearchResultsPage SearchProQuest(String text) {
 		searchtextfield.sendKeys(text);
-		new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(searchBtn)).click();
+		new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(searchBtn)).click();
 		return new SearchResultsPage();
 	}
 }
